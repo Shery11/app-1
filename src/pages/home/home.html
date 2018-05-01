@@ -1,0 +1,53 @@
+<ion-header no-border>
+  <ion-navbar color="dark">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Add a new Post</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label color="primary" stacked>Enter post Title</ion-label>
+      <ion-input color="primary" placeholder="Enter title" [(ngModel)]="title"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary" stacked>Enter post description</ion-label>
+      <ion-textarea rows="5" maxLength="500" placeholder="Enter text" [(ngModel)]="text"></ion-textarea>
+    </ion-item>
+</ion-list>
+  <!-- <ion-textarea placeholder="Enter a description"></ion-textarea> -->
+
+ <button color=
+ 'secondary' ion-button full icon-left (click)="takePicture('gallery')">
+    <ion-icon name="md-image"></ion-icon>
+ Select Picture</button>
+
+ <ion-grid>
+  <ion-row>
+    <ion-col col-12>
+     <img [src]="base64Image" *ngIf="base64Image" />
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+ <button color=
+ 'secondary' ion-button full icon-left (click)="save()">
+   <ion-icon name="checkmark"></ion-icon> Upload
+ </button>
+
+</ion-content>
+
+<ion-footer no-border>
+  <ion-toolbar color=
+  'secondary'>
+      <div class="btn-wrapper">
+          <ion-title>SELECT A PICTURE AND UPLOAD IT</ion-title>
+      
+      </div>
+            
+    
+  </ion-toolbar>
+</ion-footer>

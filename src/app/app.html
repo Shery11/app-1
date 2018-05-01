@@ -1,0 +1,32 @@
+<ion-menu [content]="content">
+  <ion-header >
+    <ion-toolbar color="dark">
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list >
+     <div *ngIf="authProvider.adminPermission" >
+      <ion-item menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+       <p style='color: #ffffff'>{{p.title}}</p>  <ion-icon [name]="p.icon" color="primary" item-end></ion-icon>
+      </ion-item>
+    </div>
+    <div *ngIf="authProvider.userPermission" >
+      <ion-item menuClose ion-item *ngFor="let p of pagess" (click)="openPage(p)">
+        <p style='color: #ffffff'>{{p.title}}</p> <ion-icon [name]="p.icon" color="primary" item-end></ion-icon>
+      </ion-item>
+    </div>
+    </ion-list>
+    
+    <ion-list>
+      <ion-item menuClose ion-item (click)='logout()'>
+        <p style='color: #ffffff'>Logout</p> <ion-icon name="log-out" color="primary" item-end></ion-icon>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

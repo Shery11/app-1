@@ -1,0 +1,64 @@
+page-login {
+
+
+
+  .text-input::-moz-placeholder {
+    color:#fff;
+  }
+  
+  .text-input:-ms-input-placeholder {
+    color: #fff;
+  }
+  
+  .text-input::-webkit-input-placeholder {
+    color: #fff;
+  }
+
+  
+	
+        p{
+        font-size:30px;
+        text-align:center;
+        // font-family: 'ShoestringsShort';
+        margin: 20;
+        
+        }
+    
+        // .lrgBtn{
+        //   min-height:68px;
+        // max-height:68px;
+        // line-height:38px;
+        // }
+        
+        .toolbar-title { 
+            text-align:center!important;
+            // margin-left:30%!important;
+        }	
+    
+      h2 {
+        text-align: center;
+        margin: 10px;
+      }
+      form {
+        // margin-bottom: 20px;
+        button {
+        //  margin-top: 20px !important;
+        }
+        p {
+          // font-style: italic;
+          color: #ff7c78;
+        }
+      }
+    
+      .invalid {
+        border-bottom: 1px solid #FF6153;
+      }
+    
+      .error-message .item-inner {
+        border-bottom: 0 !important;
+      }
+    
+    }
+    
+
+

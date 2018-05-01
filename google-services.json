@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "171170460767",
+    "firebase_url": "https://product-58a37.firebaseio.com",
+    "project_id": "product-58a37",
+    "storage_bucket": "product-58a37.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:171170460767:android:066c74f09519ee74",
+        "android_client_info": {
+          "package_name": "com.datequettee.myproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "171170460767-getobfiq59502josj4uibftr7amgih7u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAN1bnErVGEyuHq6VlOYL9eN0FxfXm3BdU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

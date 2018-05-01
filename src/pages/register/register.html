@@ -1,0 +1,62 @@
+<ion-header no-border>
+
+  <ion-navbar color="dark">
+    <ion-title>Register</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+ 
+  <ion-card >
+  <form [formGroup]="signupForm" (submit)="signupUser()" novalidate>
+
+      <ion-item>
+      <ion-label stacked>Name</ion-label>
+      <ion-input formControlName="name" type="name" placeholder="Your Full Name" 
+      [class.invalid]="!signupForm.controls.name.valid && blur">
+      </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Email</ion-label>
+      <ion-input class="text-input" formControlName="email" type="email" placeholder="Your email address" 
+        [class.invalid]="!signupForm.controls.email.valid && blur">
+      </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Password</ion-label>
+      <ion-input class="text-input" formControlName="password" type="password" placeholder="Your password" 
+        [class.invalid]="!signupForm.controls.password.valid && blur">
+      </ion-input>
+    </ion-item>
+
+    <button color="dark" ion-button block  type="submit" [disabled]="!signupForm.valid" icon-end >
+      Create an Account
+      <ion-icon name="log-in"></ion-icon>
+    </button>
+
+  </form>
+
+</ion-card>
+
+
+    <p style="padding:10px 0; color: #ffffff">OR</p>
+
+    <button color="light" ion-button block clear (click)="loginPage()">
+      Go to Login Screen
+    </button>
+  
+</ion-content>
+
+
+<ion-footer no-border>
+    <ion-toolbar color=
+    'secondary'>
+        <div class="btn-wrapper">
+            <ion-title>DATING TIPS FROM DATEQUETTE</ion-title>
+        </div>
+     </ion-toolbar>
+  </ion-footer>

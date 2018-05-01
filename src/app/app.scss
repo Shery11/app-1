@@ -1,0 +1,90 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+
+ion-content {
+   
+
+background: #ee9ca7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #222222, #810510);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #222222, #810510); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+button{
+
+    background: #ee9ca7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #222222, #810510);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #222222, #810510); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+}
+
+ion-card{
+
+    background: #ee9ca7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #222222, #810510);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #222222, #810510); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+}
+
+
+ion-item{
+    background: #ee9ca7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #222222, #810510);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #222222, #810510); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+
+ion-menu{
+    ion-content{
+        background: #ee9ca7;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #222222, #810510);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #222222, #810510); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+    }
+
+    ion-item{
+        background: #ee9ca7;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #222222, #810510);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #222222, #810510); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+    }
+   
+}
+
+
+// ion-content{
+
+//     ion-list{
+
+     
+
+//     } 
+
+// }
+
+
+.btn-wrapper {
+    text-align: center;
+}
+
+
+
+

@@ -1,0 +1,66 @@
+<ion-header no-border>
+  <ion-navbar color="dark">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Tips</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content >
+  <ion-list>
+    <ion-card *ngFor="let post of posts" margin	 >
+
+      <ion-item >
+        <ion-avatar item-start>
+          <img src={{post.imgUrl}}>
+        </ion-avatar>
+        <h1 style="color: #ffffff">{{post.title}}</h1>
+        <p style='color: #ffffff'>{{post.time}}</p>
+        
+         <ion-icon color="primary" *ngIf="authProvider.adminPermission" name="trash" (click)="deletePost(post)" item-end></ion-icon>
+       
+      </ion-item>
+    
+      <img src="{{post.imgUrl}}">
+      
+      <ion-item>
+      <ion-card-content color="primary">
+        {{post.text}}
+      </ion-card-content>
+    
+      <ion-row>
+        <ion-col>
+          <button color=
+          'primary' ion-button icon-left clear small (click)="like(post)">
+            <ion-icon name="thumbs-up"></ion-icon>
+            <div>{{post.like}}</div>
+          </button>
+        </ion-col>
+        
+        <ion-col center text-center>
+          <ion-note color='primary'>
+              {{post.time | amTimeAgo}}
+          </ion-note>
+        </ion-col>
+      </ion-row>
+
+    </ion-item>
+    
+    </ion-card>
+
+    
+
+  </ion-list>
+  
+</ion-content>
+
+
+<ion-footer no-border>
+    <ion-toolbar color=
+    'secondary'>
+        <div class="btn-wrapper">
+            <ion-title>DATING TIPS FROM DATEQUETTE</ion-title>
+        </div>
+     </ion-toolbar>
+  </ion-footer>

@@ -1,0 +1,36 @@
+<ion-header no-border>
+  <ion-navbar color="dark">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>User List</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+  <ion-list>
+   
+    <ion-item *ngFor="let user of usersList" margin-bottom="2px">
+        <ion-icon color=
+        'primary' name="person" item-start></ion-icon>
+        <h2 style="color: #ffffff" (click)="openChatPage(user.key)">{{user.data.name}}</h2>
+        <ion-icon color=
+        'primary' name="open" item-end></ion-icon>
+    </ion-item>
+  
+  
+ 
+
+</ion-list>
+  
+</ion-content>
+
+<ion-footer no-border>
+    <ion-toolbar color=
+    'secondary'>
+        <div class="btn-wrapper">
+            <ion-title>CLICK ON ANY USER TO CHAT</ion-title>
+        </div>
+     </ion-toolbar>
+  </ion-footer>
