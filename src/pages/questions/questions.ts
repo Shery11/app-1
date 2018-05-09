@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { IonicPage, NavController, NavParams, Content, LoadingController } from 'ionic-angular';
+import {  NavController, NavParams, Content, LoadingController } from 'ionic-angular';
 import { Storage } from '@ionic/storage';
 import * as firebase from 'Firebase';
 /**
@@ -9,7 +9,6 @@ import * as firebase from 'Firebase';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
   selector: 'page-questions',
   templateUrl: 'questions.html',

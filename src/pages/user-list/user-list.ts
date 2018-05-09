@@ -1,6 +1,6 @@
 import { QuestionsPage } from './../questions/questions';
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
+import { NavController, NavParams, LoadingController } from 'ionic-angular';
 import * as firebase from 'firebase';
 
 
@@ -11,7 +11,6 @@ import * as firebase from 'firebase';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
   selector: 'page-user-list',
   templateUrl: 'user-list.html',

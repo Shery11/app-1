@@ -1,8 +1,8 @@
-import { UserListPage } from './../pages/user-list/user-list';
+import { UserListPage } from '../pages/user-list/user-list';
 import { AndroidPermissions } from '@ionic-native/android-permissions';
 import { Camera } from '@ionic-native/camera';
-import { AboutPage } from './../pages/about/about';
-import { QuestionsPage } from './../pages/questions/questions';
+import { AboutPage } from '../pages/about/about';
+import { QuestionsPage } from '../pages/questions/questions';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';

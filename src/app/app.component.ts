@@ -92,7 +92,7 @@ export class MyApp {
 
       this.statusBar.styleDefault();
       this.splashScreen.hide();
-
+      
       this.fcm.listenToNotifications().pipe(
         tap(msg => {
             // alert(JSON.stringify(msg));
