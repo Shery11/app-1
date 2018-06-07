@@ -1,6 +1,6 @@
 {
   "name": "datequette",
-  "app_id": "",
+  "app_id": "422a3d6d",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}
