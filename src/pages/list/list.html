@@ -15,7 +15,7 @@
         <ion-avatar item-start>
           <img src={{post.imgUrl}}>
         </ion-avatar>
-        <h1 style="color: #ffffff">{{post.title}}</h1>
+        <h1 style="color: #ffffff" text-wrap>{{post.title}}</h1>
         <p style='color: #ffffff'>{{post.time}}</p>
         
          <ion-icon color="primary" *ngIf="authProvider.adminPermission" name="trash" (click)="deletePost(post)" item-end></ion-icon>
@@ -25,7 +25,7 @@
       <img src="{{post.imgUrl}}">
       
       <ion-item>
-      <ion-card-content color="primary">
+      <ion-card-content color="primary" text-wrap>
         {{post.text}}
       </ion-card-content>
     
