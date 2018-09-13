@@ -1,7 +1,7 @@
 import { FcmProvider } from './../../providers/fcm/fcm';
 import { ListPage } from './../list/list';
 import { Component } from '@angular/core';
-import {  NavController, NavParams,AlertController, LoadingController } from 'ionic-angular';
+import { NavController, NavParams,AlertController, LoadingController } from 'ionic-angular';
 import { FormBuilder, Validators, FormGroup } from '@angular/forms';
 import { AuthDataProvider } from '../../providers/auth/auth';
 import { HomePage } from '../home/home';
