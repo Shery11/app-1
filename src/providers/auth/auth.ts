@@ -12,12 +12,7 @@ export class AuthDataProvider {
 
 		firebase.initializeApp({
   
-      apiKey: "AIzaSyD6ihWFiQtrl_og9vS_iXx1ij3OStG_Dtw",
-      authDomain: "product-58a37.firebaseapp.com",
-      databaseURL: "https://product-58a37.firebaseio.com",
-      projectId: "product-58a37",
-      storageBucket: "product-58a37.appspot.com",
-      messagingSenderId: "171170460767"
+    
   
       });
 
